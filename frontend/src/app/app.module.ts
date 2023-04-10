@@ -14,6 +14,7 @@ import { EditPostComponent } from './dashboard/edit-post/edit-post.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewPostComponent } from './dashboard/new-post/new-post.component';
 import { EmptyComponent } from './empty/empty.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { EmptyComponent } from './empty/empty.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

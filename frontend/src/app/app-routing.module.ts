@@ -9,20 +9,19 @@ import { EditPostComponent } from './dashboard/edit-post/edit-post.component';
 import { NewPostComponent } from './dashboard/new-post/new-post.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmptyComponent } from './empty/empty.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'login', component: LoginComponent },
-  {
-    path: 'dashboard', component: DashboardComponent, children: [
-      { path: 'post/new', component: NewPostComponent },
-      { path: 'post/edit', component: EditPostComponent },
-    ]
-  },
-  { path: 'post/:postId', component: ViewPostComponent },
-  {path : '**' , component : EmptyComponent},
+  { path: 'login', component: LoginComponent, canActivate: [AuthGuard] },
+  { path: 'dashboard', redirectTo: '/dashboard/post/all', pathMatch :'full'},
+  { path: 'dashboard/post/new/:newPostId', component: DashboardComponent },
+  { path: 'dashboard/post/edit/:editPostId', component: DashboardComponent },
+  { path: 'dashboard/post/all', component: DashboardComponent },
+  { path: ':postName', component: ViewPostComponent },
+  { path: '**', component: EmptyComponent },
 ];
 
 @NgModule({
