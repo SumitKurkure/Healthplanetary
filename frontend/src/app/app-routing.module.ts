@@ -8,6 +8,7 @@ import { ViewPostComponent } from './view-post/view-post.component';
 import { EditPostComponent } from './dashboard/edit-post/edit-post.component';
 import { NewPostComponent } from './dashboard/new-post/new-post.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { EmptyComponent } from './empty/empty.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
     ]
   },
   { path: 'post/:postId', component: ViewPostComponent },
+  {path : '**' , component : EmptyComponent},
 ];
 
 @NgModule({

@@ -13,6 +13,7 @@ import { ViewPostComponent } from './view-post/view-post.component';
 import { EditPostComponent } from './dashboard/edit-post/edit-post.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewPostComponent } from './dashboard/new-post/new-post.component';
+import { EmptyComponent } from './empty/empty.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NewPostComponent } from './dashboard/new-post/new-post.component';
     NewPostComponent,
     ViewPostComponent,
     EditPostComponent,
-    DashboardComponent
+    DashboardComponent,
+    EmptyComponent
   ],
   imports: [
     BrowserModule,
