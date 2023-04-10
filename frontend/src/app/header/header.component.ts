@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public showSearchBar: boolean = false;
+  public showSearchBox: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  searchBar(){
-    this.showSearchBar = !this.showSearchBar;
+  searchBox() {
+    this.showSearchBox = !this.showSearchBox;
   }
 }

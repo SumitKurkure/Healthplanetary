@@ -17,11 +17,12 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent, canActivate: [AuthGuard] },
-  { path: 'dashboard', redirectTo: '/dashboard/post/all', pathMatch :'full'},
+  { path: 'dashboard', redirectTo: '/dashboard/post/all', pathMatch: 'full' },
   { path: 'dashboard/post/new/:newPostId', component: DashboardComponent },
   { path: 'dashboard/post/edit/:editPostId', component: DashboardComponent },
   { path: 'dashboard/post/all', component: DashboardComponent },
-  { path: ':postName', component: ViewPostComponent },
+  { path: ':category', component: CategoryComponent },
+  { path: ':category/:subCategory', component: CategoryComponent },
   { path: '**', component: EmptyComponent },
 ];
 

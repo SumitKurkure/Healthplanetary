@@ -1,3 +1,13 @@
 body{
     margin: 0;
 }
+@media (max-width : 1064px){
+    .icon input {
+        display: none;
+    }
+}
+@media (max-width: 1000px){
+    nav ul{
+        display: none;
+    }
+}
