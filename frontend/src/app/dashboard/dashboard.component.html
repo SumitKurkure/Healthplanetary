@@ -1,2 +1,16 @@
-<h1>dashbpard works</h1>
-<router-outlet></router-outlet>
+<div class="dashboard-component">
+    <div class="sidebar">
+        <div class="sidebar-head">
+            <span>Dashboard</span>
+        </div>
+        <hr>
+        <div *ngFor="let item of sidebarData">
+            <span class="sidebar-label" (click)="sidebarClick(item)" [ngClass]="{'active' : item.value === activeSidebarTab}">{{item.label}}</span>
+        </div>
+    </div>
+    <div class="main-component">
+        <!-- <div *ngIf="activeSidebarTab === 'all'"> -->
+            <span>{{allPostList?.name}}</span>
+        <!-- </div> -->
+    </div>
+</div>

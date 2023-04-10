@@ -1,0 +1,17 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "name": "Post 1",
+            "created_on": "23/01/2023"
+        },
+        {
+            "name": "Post 1",
+            "created_on": "23/01/2023"
+        },
+        {
+            "name": "Post 1",
+            "created_on": "23/01/2023"
+        }
+    ]
+}
