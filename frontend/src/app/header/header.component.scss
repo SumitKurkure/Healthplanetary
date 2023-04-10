@@ -1,0 +1,105 @@
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .08);
+    z-index: 1000;
+    padding: 0 8rem;
+}
+
+.header nav .logo img {
+    width: 18rem;
+    cursor: pointer;
+    // margin: 7px 0;
+}
+
+.header .logo {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    // border-right: 1px solid rgba(0, 0, 0, 0.488);
+    padding: 5px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0px !important;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 18px 15px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.1s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header nav ul li a.active {
+    border-bottom: 2.5px solid #ffcb00;
+}
+
+.header nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffcb00;
+    display: block;
+    transition: 0.2s linear;
+}
+
+.header nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header nav ul li a:hover {
+    // color: #fac031;
+}
+
+.header nav .icon {
+    i {
+        font-size: 18px;
+        color: #000;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .searchBox {
+        outline: #000;
+        padding: 5px;
+    }
+}
+
+.header nav .icon i:hover {
+    // color: #ffcb00;
+}
+
+.icon {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-menu-div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.fa-magnifying-glass{
+    margin-left: 1.5rem !important;
+}

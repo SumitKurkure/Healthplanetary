@@ -9,12 +9,14 @@ import { EditPostComponent } from './dashboard/edit-post/edit-post.component';
 import { NewPostComponent } from './dashboard/new-post/new-post.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmptyComponent } from './empty/empty.component';
+import { CategoryComponent } from './category/category.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent },
+  {path : ':category' , component: CategoryComponent },
   {
     path: 'dashboard', component: DashboardComponent, children: [
       { path: 'post/new', component: NewPostComponent },

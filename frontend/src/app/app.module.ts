@@ -14,6 +14,7 @@ import { EditPostComponent } from './dashboard/edit-post/edit-post.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewPostComponent } from './dashboard/new-post/new-post.component';
 import { EmptyComponent } from './empty/empty.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +30,12 @@ import { EmptyComponent } from './empty/empty.component';
     ViewPostComponent,
     EditPostComponent,
     DashboardComponent,
-    EmptyComponent
+    EmptyComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
