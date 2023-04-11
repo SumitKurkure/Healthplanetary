@@ -35,8 +35,8 @@ export class DashboardComponent implements OnInit {
   public activeSidebarTab: any = 'new';
   public allPostList: any;
 
-  constructor(private router: Router, private activeRoute: ActivatedRoute, private appService: AppService) { }
-
+  constructor(private router: Router, private activeRoute: ActivatedRoute, private appService: AppService) {
+  }
   ngOnInit(): void {
     this.activeSidebarTab = this.activeRoute?.snapshot?.url[2].path;
     if (this.activeSidebarTab === 'all') {
@@ -58,7 +58,17 @@ export class DashboardComponent implements OnInit {
       case 'all':
         this.showAllPost(item);
         break;
+      case 'logout':
+        this.logout();
     }
+  }
+  logout() {
+    sessionStorage.clear();
+    localStorage.clear();
+    let route = {
+      route: '/'
+    }
+    this.routeTo(route);
   }
   autoPostIdGenerator(route: any) {
     try {

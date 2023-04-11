@@ -5,12 +5,22 @@
         </div>
         <hr>
         <div *ngFor="let item of sidebarData">
-            <span class="sidebar-label" (click)="sidebarClick(item)" [ngClass]="{'active' : item.value === activeSidebarTab}">{{item.label}}</span>
+            <span class="sidebar-label" (click)="sidebarClick(item)"
+                [ngClass]="{'active' : item.value === activeSidebarTab}">{{item.label}}</span>
         </div>
     </div>
     <div class="main-component">
-        <!-- <div *ngIf="activeSidebarTab === 'all'"> -->
-            <span>{{allPostList?.name}}</span>
-        <!-- </div> -->
+        <ng-container *ngIf="allPostList && activeSidebarTab === 'all'">
+            <div *ngFor="let item of allPostList">
+                <span>{{item.name}}</span>
+            </div>
+        </ng-container>
+        <ng-container class="">
+
+        </ng-container>
+        <!-- <iframe src="https://www.youtube.com/embed/tRSMOMSqbF8" frameborder="0" allowfullscreen></iframe> -->
+        <!-- <ng-container *ngIf="activeSidebarTab === 'new'">
+
+        </ng-container> -->
     </div>
 </div>

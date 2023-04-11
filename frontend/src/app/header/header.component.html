@@ -1,20 +1,22 @@
 <div class="header">
-  <div class="section">
+  <nav>
     <div class="logo">
       <img src="assets/images/Health-1.jpg" routerLink="/">
     </div>
-    <nav>
-      <ul>
-        <li><a routerLink="/health" routerLinkActive="active">Health</a></li>
-        <li><a routerLink="/fitness" routerLinkActive="active">Fitness</a></li>
-        <li><a routerLink="/food" routerLinkActive="active">Food</a></li>
-        <li><a routerLink="/drink" routerLinkActive="active">Drink</a></li>
-        <li><a routerLink="/Vegetable" routerLinkActive="active">Vegetable</a></li>
-      </ul>
-      <div class="icon">
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a routerLink="/health" routerLinkActive="active">Health</a></li>
+      <li><a routerLink="/fitness" routerLinkActive="active">Fitness</a></li>
+      <li><a routerLink="/food" routerLinkActive="active">Food</a></li>
+      <li><a routerLink="/drink" routerLinkActive="active">Drink</a></li>
+      <li><a routerLink="/Vegetable" routerLinkActive="active">Vegetable</a></li>
+    </ul>
+    <!-- <div class="icon">
         <input *ngIf="showSearchBox" type="text" placeholder="Search.." name="searchBox" required />
-        <i class="fa-solid fa-magnifying-glass" (click)="searchBox()"></i>
-      </div>
-    </nav>
-  </div>
+        <i *ngIf="!showSearchBox" class="fa-solid fa-magnifying-glass" (click)="searchBox()"></i>
+      </div> -->
+  </nav>
 </div>
