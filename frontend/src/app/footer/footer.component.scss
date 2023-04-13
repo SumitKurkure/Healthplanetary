@@ -1,0 +1,113 @@
+.footer {
+    background-color: #00040B;
+    padding: 4rem 4rem 0 4rem;
+
+    .logo {
+        padding: 2rem 0;
+
+        img {
+            width: 20rem;
+        }
+    }
+}
+
+.sing-up-btn {
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #DF331C;
+    color: white;
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid white;
+
+    .mail-box {
+        padding: 0 2rem 2rem 0;
+
+        h4 {
+            color: white;
+            font-weight: 600;
+        }
+
+        .mail-box-input {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            input {
+                outline: none;
+                padding: 6px;
+                border: 0;
+                width: 60%;
+                font-size: 1.8rem;
+            }
+
+            .sing-up-btn {
+                outline: none;
+                padding: 4px 10px;
+                border-radius: 0;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: blue;
+                }
+
+            }
+        }
+
+        .icons ul {
+            display: flex;
+            padding-left: 0;
+
+            li {
+                padding: 1rem;
+
+                a .fa-brands {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .category-footer {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 2rem;
+                line-height: 1.5rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 2rem;
+
+                    &:hover {
+                        color: #FFCB00;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.footer-bottom {
+    .footer-credit {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1.5rem;
+
+        a {
+            color: wheat;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,3 +1,8 @@
+.home-component {
+    display: flex;
+    flex-direction: column;
+}
+
 ul {
     list-style: none;
     margin-bottom: -19px;
@@ -15,13 +20,16 @@ ul li {
         padding-right: 2rem;
 
         .card {
-            box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+            // box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12);
             padding: 2rem;
             display: flex;
         }
-        .card-slot-1-img{
+
+        .card-slot-1-img {
             padding: 5px;
         }
+
         .text-container {
             .category-top-title {
                 font-size: 1.4rem;
@@ -58,7 +66,16 @@ ul li {
 .slot-2 {
     width: 40%;
     margin-top: 2rem;
-    box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+    margin-right: 2rem;
+    // box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12);
+
+
+    a .card:hover {
+        .text-container .post-name {
+            text-decoration: underline;
+        }
+    }
 
     .card {
         padding: 2rem;
@@ -95,7 +112,8 @@ ul li {
                 color: black;
                 font-family: sans-serif;
                 padding: 1.5rem 0;
-                &:hover{
+
+                &:hover {
                     text-decoration: underline;
                 }
             }
@@ -105,10 +123,16 @@ ul li {
 
 .slot-3 {
     width: 30%;
-    padding: 2rem;
+    // padding: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    // box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12);
+
 
     .card {
-        box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+        height: 100%;
+
     }
 
     .slot-3-head {
@@ -139,7 +163,7 @@ ul li {
 }
 
 .box-2 {
-    padding: 4rem;
+    padding: 4rem 0;
 
     .card-grp {
         ul {
@@ -149,7 +173,9 @@ ul li {
 
             li {
                 padding: 2rem;
-                box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+                // box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12);
+
             }
 
             .card {
@@ -174,6 +200,14 @@ ul li {
                         text-transform: uppercase;
                         padding: 0.2rem;
                         color: black;
+                        text-decoration: underline;
+                        text-decoration-color: #FFCB00;
+                    }
+
+                    .post-details {
+                        text-decoration: underline;
+                        text-decoration-color: #ffffff;
+                        cursor: auto;
                     }
 
                     .post-name {
@@ -193,6 +227,8 @@ ul li {
 
     .card-grp {
         float: left;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12);
+        padding: 2rem 0;
 
         .card {
             display: flex;
@@ -212,6 +248,14 @@ ul li {
                     text-transform: uppercase;
                     padding: 0.2rem;
                     color: black;
+                    text-decoration: underline;
+                    text-decoration-color: #FFCB00;
+                }
+
+                .post-details {
+                    text-decoration: underline;
+                    text-decoration-color: #ffffff;
+                    cursor: auto;
                 }
 
                 .post-name {
@@ -223,4 +267,18 @@ ul li {
             }
         }
     }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-component {
+    padding: 16px;
+}
+
+.sticky+.main-component {
+    padding-top: 102px;
 }
