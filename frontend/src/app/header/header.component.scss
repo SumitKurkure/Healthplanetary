@@ -40,7 +40,7 @@
 
 .header nav ul li {
     display: inline-flex;
-    margin: 18px 15px;
+    margin: 0px 15px;
 }
 
 .header nav ul li a {
@@ -53,7 +53,11 @@
 }
 
 .header nav ul li a.active {
-    border-bottom: 2.5px solid #ffcb00;
+    // border-bottom: 2.5px solid #ffcb00;
+    border-bottom: 2.5px solid #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-color: #ffcb00;
 }
 
 
@@ -201,4 +205,49 @@ input[type="checkbox"] {
     .header .logo img {
         width: 16rem;
     }
+}
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 14px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .12);
+    z-index: 1;
+    margin-top: 1.7rem;
+    margin-left: -4rem;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border-bottom: 0;
+    display: block;
+    text-align: center;
+    font-size: 1.8rem !important;
+
+    &::after {
+        background-color: white !important;
+    }
+
+    &:hover {
+        color: #5d563e !important;
+    }
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

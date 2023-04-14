@@ -6,10 +6,16 @@
     </div>
     <input type="checkbox" id="click">
     <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
     </label>
     <ul>
-      <li><a routerLink="/health" routerLinkActive="active">Health</a></li>
+      <li class="dropdown"><a class="dropbtn" routerLink="/health" routerLinkActive="active">Health
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </a></li>
+
       <li><a routerLink="/fitness" routerLinkActive="active">Fitness</a></li>
       <li><a routerLink="/food" routerLinkActive="active">Food</a></li>
       <li><a routerLink="/drink" routerLinkActive="active">Drink</a></li>

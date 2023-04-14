@@ -21,8 +21,8 @@ const routes: Routes = [
   { path: 'dashboard/post/new/:newPostId', component: DashboardComponent },
   { path: 'dashboard/post/edit/:editPostId', component: DashboardComponent },
   { path: 'dashboard/post/all', component: DashboardComponent },
-  // { path: ':category', component: CategoryComponent },
-  // { path: ':category/:subCategory', component: CategoryComponent },
+  { path: ':category', component: CategoryComponent },
+  { path: ':category/:subCategory', component: CategoryComponent },
   { path: 'empty-state', component: EmptyComponent },
   { path: '**', redirectTo: 'empty-state', pathMatch: 'full' },
 ];
